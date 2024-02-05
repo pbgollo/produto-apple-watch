@@ -40,7 +40,7 @@ let corSelecionada = 1;
 function trocarImagem(){
     const idOpcaoSelecionada = document.querySelector("[name='opcao-imagem']:checked").id;
     imagemSelecionada = idOpcaoSelecionada.charAt(0);
-    imagemVisualizacao.src = "./imagens/opcoes-cores/imagens-azul-inverno/imagem-" + imagemSelecionada + ".jpeg";
+    imagemVisualizacao.src = "./imagens/opcoes-cores/" + opcaoCores[corSelecionada].pasta + "/imagem-" + imagemSelecionada + ".jpeg";
 }
 
 function trocarTamanho(){
